@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+    <link rel="stylesheet" href="./CSS/Desktop.css">
+    <link rel="stylesheet" href="./CSS/Mobile.css">
+    <link rel="shortcut icon" href="./Assets/SalesBookLogo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="dashcontain">
+        <div class="Dashboardheader">
+            <div id="WelcomeUser"> Welcome </div>
+            <div class="LogoImage">
+                <img src="./Assets/SalesBookLogo.png" alt="LogoImage" class="LogoImage">
+                <div class="LogoSales"> Sales Book Record </div>
+            </div>
+            <div class="LogoutDash"> <a href="index.html"> Logout </a> </div>
+        </div>
+
+        <div class="DashboardCContain">
+            <div class="DateSelect">
+                <div class="DateSelectOne"> Insert Date </div>
+
+                <div class="DateSelectTwo"> 
+                    <input type="date" id="SelectDate">
+                    <button class="SubmitDate">Submit</button>
+                </div>
+
+                <div class="PastDate">
+
+                </div>
+            </div>
+
+            <div class="IncomeExepend">
+                <div class="Income">
+                    <div class="IncomeDiv"> Income </div>
+                    <div class="InconeDivTwo">
+                        <div class="InconeDivTwoIn">
+                            <div class="InconeDivTwoDesOne"> 
+                                <p>Description </p>
+                                <p> Qty </p>
+                                <p> Price </p>
+                                <p> Amount </p>
+                            </div>
+                            <div class="InconeDivTwoDesOne">
+                                <input type="text" id="Description">
+                                <input type="text" id="QTY" oninput="Multiply()" >
+                                <input type="text" id="Price" oninput="Multiply()">
+                                <input type="text" id="Amount" oninput="Multiply()">
+                            </div>
+                        </div>
+
+                        <button class="MovetoIncom"> Add </button>
+                    </div>
+                    
+                    <div class="AllIncome">
+                            <div class="InconeDivTwoDesOne"> 
+                                <p>Description </p>
+                                <p> Qty </p>
+                                <p> Price </p>
+                                <p> Amount </p>
+                            </div>
+
+                            <div class="InconeDivTwoDesOne4">
+
+                            </div>
+            
+                    </div>
+                    
+                    
+                    <div class="SumTotal">
+                        <h3> Income Total </h3>
+                        <h4 id="SumTotal"> N  </h4>
+                    </div>
+
+                </div>
+
+                <div class="Expenditure">
+                    <div class="ExpendDiv"> Expenditure </div>
+                    <div class="ExpendDivTwo">
+                        <div class="ExpendDivTwoIn">
+                            <div class="ExpendDivTwoDesOne"> 
+                                <p>Description </p>
+                                <p> Qty </p>
+                                <p> Price </p>
+                                <p> Amount </p>
+                            </div>
+                            <div class="InconeDivTwoDesOne">
+                                <input type="text" id="ExpendDescription" >
+                                <input type="text" id="ExpendQTY" oninput="ExpendMultiply()">
+                                <input type="text" id="ExpendPrice" oninput="ExpendMultiply()">
+                                <input type="text" id="ExpendAmount" oninput="ExpendMultiply()">
+                            </div>
+                        </div>
+
+                        <button class="MoveToExpend"> Add </button>
+                    </div>
+                    
+                    <div class="AllExpenditure">
+                            <div class="ExpendDivTwoDesOne"> 
+                                <p>Description </p>
+                                <p> Qty </p>
+                                <p> Price </p>
+                                <p> Amount </p>
+                            </div>
+
+                    </div>
+                    
+                    
+                    <div class="ExpendSumTotal">
+                        <h3> Income Total </h3>
+                        <h4> N 3000 </h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./JavaScript/Dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a { 
+  color: black;
+  text-decoration: none;
+}
+
+
+.MainContain {
+  width: 100%;
+  height: 100vh;
+  background-color: lightgray;
+
+}
+
+.Contain1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Contain1 img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.Contain1 h2 {
+  font-size: 50px;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+.Contain1 button {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 350ms;
+  transform: scale(1);
+}
+
+.Contain1 button:hover {
+    transform: scale(1.05);
+    background-color: rgb(141, 5, 5);
+}
+
+.LoginSignUpContain {
+  width: 100%;
+  height: 100vh;
+  background-color: tan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginSignUpWrapp {
+  width: 40%;
+  height: 65%;
+  /* border: solid 2px rgba(0, 0, 0, 0.438); */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.356);
+}
+
+.HomeLine {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.HomeLine a {
+  color: black;
+}
+
+.HomeLine a:hover {
+  color: red;
+}
+
+.LoginSignOne {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.LoginSignOne h2 { 
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.LoginSignOne h3 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#LoginID {
+  color: red;
+}
+
+.LoginSignUpDetails {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.LoginSignUpDetailsDiv {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.LoginSignUpDetailsDiv h2 {
+  font-size: 20px;
+  width: 120px;
+}
+
+.LoginSignUpDetailsDiv input {
+  margin-left: 10px;
+  height: 30px;
+  width: 200px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.LoginSignUpDetailsDiv input::placeholder {
+    padding-left: 10px;
+}
+
+.PassWOrdShow {
+  margin-left: 10px;
+  height: 30px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.PassWOrdShow p {
+  cursor: pointer;
+}
+
+#HidePassword {
+  display: none;
+}
+
+.Re input {
+    width: 250px;
+  }
+
+.SubmitDiv button {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 350ms;
+  transform: scale(1);
+  margin-top: 40px;
+}
+
+.SubmitDiv button:hover {
+    transform: scale(1.05);
+    background-color: rgb(141, 5, 5);
+}
+
+/* Sign Up Codes */
+
+.SignUpDetails {
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    margin-top: -20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .SignUpDetailsDiv {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  
+  .SignUpDetailsDiv h2 {
+    font-size: 20px;
+    width: 120px;
+  }
+  
+  .SignUpDetailsDiv input {
+    margin-left: 10px;
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border: none;
+    padding: 10px;
+  }
+  
+  .SignUpDetailsDiv input::placeholder {
+      padding-left: 10px;
+  }
+  
+  .SignPassWOrdShow {
+    margin-left: 10px;
+    height: 30px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .SignPassWOrdShow p {
+    cursor: pointer;
+  }
+  
+  .SignRe input {
+      width: 250px;
+    }
+  
+  .SignSubmitDiv button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 350ms;
+    transform: scale(1);
+    margin-top: 10px;
+  }
+  
+  .SignSubmitDiv button:hover {
+      transform: scale(1.05);
+      background-color: rgb(141, 5, 5);
+  }
+  
+
+  /* Dashboard  */
+.dashcontain {
+  width: 100%;
+  height: 100vh;
+  background-color: lightgrey;
+  padding: 20px 50px;
+}
+
+.Dashboardheader {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+#WelcomeUser {
+  font-size: 25px;
+}
+
+.LogoImage {
+  display: flex;
+  align-items: center;
+}
+
+.LogoImage img {
+  height: 50px;  
+  margin-right: 20px;
+}
+
+.LogoSales {
+  font-size: 35px;
+}
+
+.LogoutDash {
+  font-size: 25px;
+}
+
+.LogoutDash a {
+    color: white;
+    transition: all 350ms;
+    transform: scale(1);
+}
+
+.LogoutDash a:hover {
+    transform: scale(1.05);
+    color: red;
+}
+
+.DashboardCContain {
+  width: 100%;
+  height: 87%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.DateSelect {
+  width: 30%;
+  height: 80vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.DateSelectOne {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-transform: uppercase; */
+  font-size: 20px;
+}
+
+.DateSelectTwo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5px;
+  border-bottom: solid rgba(255, 255, 255, 0.61) 2px;
+}
+
+.DateSelectTwo input {
+  width: 60%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.DateSelectTwo button {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.PastDate {
+  width: 100%;
+  height: 500px;
+  margin-top: 1px;
+  display: block;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 0 40px;
+}
+
+.PastDateList {
+  width: 100%;
+  height: 40px;
+  border-bottom: solid white 1px;
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.IncomeExepend {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Income {
+  width: 48%;
+  height: 100%;
+  padding: 10px;
+}
+
+.Expenditure {
+  width: 48%;
+  height: 100%;
+  padding: 10px;
+}
+
+.IncomeDiv {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.InconeDivTwo {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.InconeDivTwoIn {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+
+.InconeDivTwoDesOne {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  
+}
+
+.pastelistttttt {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.InconeDivTwoDesOne p {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.InconeDivTwoDesOne input {
+  width: 25%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  padding-left: 10px;
+  outline: none;
+
+}
+
+.InconeDivTwoDesOne4 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.PasteIcomeList {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Income button {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.AllIncome {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+.SumTotal {
+  width: 100%;
+  height: 65px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.SumTotal h3 {
+  font-size: 20px;
+}
+
+.SumTotal h4 {
+  font-size: 20px;
+}
+
+
+
+
+/* Expensiture  */
+
+.ExpendDiv {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.ExpendDivTwo {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.ExpendDivTwoIn {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+
+.ExpendDivTwoDesOne {
+  width: 100%;
+  height: 50px;
+  display: flex;
+
+}
+
+.ExpendDivTwoDesOne p {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.ExpendDivTwoDesOne input {
+  width: 25%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  padding-left: 10px;
+  outline: none;
+
+}
+
+.ExpendDivTwo button {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.AllExpenditure {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+.ExpendSumTotal {
+  width: 100%;
+  height: 65px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ExpendSumTotal h3 {
+  font-size: 20px;
+}
+
+.ExpendSumTotal h4 {
+  font-size: 20px;
+}
